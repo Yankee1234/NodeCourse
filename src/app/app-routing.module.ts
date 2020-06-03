@@ -11,10 +11,8 @@ const routes: Routes = [
   {path:'store'},
   {path:'rating'},
   {path:'about'},
-  {path:'profile/:id'},
-  {path:'request'},
+  {path:'profile'},
   {path:'forum'},
-  {path:'forum/:id'}
 ];
 
 @NgModule({
