@@ -1,0 +1,3 @@
+git: https://github.com/Yankee1234/NodeCourse
+Trello: https://trello.com/b/hGOxGMU9/node-course-project
+Schema: https://app.dbdesigner.net/designer/schema/332608

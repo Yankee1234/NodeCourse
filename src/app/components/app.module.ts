@@ -9,6 +9,9 @@ import { HomeComponent } from './home/home.component';
 import { LoginComponent } from './login/login.component';
 import { RegisterComponent } from './register/register.component';
 import { ProfileComponent } from './profile/profile.component';
+import { AuthGuardService } from '../services/Authorize/guard/auth.guard';
+import { AuthService } from '../services/Authorize/auth-service.service';
+import { HttpClientModule } from '@angular/common/http';
 
 
 
@@ -26,8 +29,10 @@ import { ProfileComponent } from './profile/profile.component';
     AppRoutingModule,
     MDBBootstrapModule.forRoot(),
     ReactiveFormsModule,
-    FormsModule
+    FormsModule,
+    HttpClientModule
   ],
+  providers: [AuthService, AuthGuardService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
